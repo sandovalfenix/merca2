@@ -1,7 +1,7 @@
 <template>
   <div class="container space-2">
     <h3 class="text-uppercase badge-info p-2">{{User.name}} {{User.lastName}} - Codigo: {{User.codeRef}}</h3>
-    <v-card>
+    <v-card class="text-uppercase">
       <v-card-title>
         Referidos
         <v-spacer></v-spacer>
@@ -20,6 +20,9 @@
         :items-per-page="20"
         class="elevation-1"
       >
+        <template v-slot:item.email='{item}'>
+          <span class='text-lowercase'>{{item.email}}</span>
+        </template>
         <template v-slot:item.active="{ item }">
           <span v-if='item.active' class="badge badge-pill badge-success">Activo</span>
           <span v-else class="badge badge-pill badge-danger">Inactivo</span>
@@ -61,7 +64,7 @@ import {mapState, mapActions} from 'vuex'
           },
           { text: 'Correo', value: 'email' },
           { text: 'Codigo', value: 'codeRef' },
-          { text: 'Nivel', value: 'type' },
+          { text: 'Tipo', value: 'type' },
           { text: 'Estado', value: 'active' },
           { text: 'Referidos', value: 'link-referrals' }
         ],

@@ -2,7 +2,7 @@
   <!-- Header -->
   <header class="bg-white u-header--fix-top u-header">
     <nav class="navbar flex-nowrap p-0 border-bottom">
-      <div class="navbar-brand-wrapper col-auto bg-white text-center border-bottom">
+      <div class="navbar-brand-wrapper bg-white text-center">
         <!-- Logo For Mobile View -->
         <a class="navbar-brand navbar-brand-mobile" href="/">
           <img class="img-fluid" src="@/assets/logo_merca2.png" alt="Nova">
@@ -16,7 +16,7 @@
         <!-- End Logo For Desktop View -->
       </div>
 
-      <div class="header-content col pl-md-0 my-2">
+      <div class="header-content col pl-md-0">
         <div class="d-flex align-items-center">
           <!-- Header Search -->
           <div class="js-header-search position-relative" data-search-clear="#headerSearchResultsClear" data-search-field="#headerSearchField" data-search-form="#headerSearchForm" data-search-mobile-invoker="#headerSearchMobileInvoker" data-search-target="#headerSearchResults">
