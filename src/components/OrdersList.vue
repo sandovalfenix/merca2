@@ -53,7 +53,7 @@
         </td>
         <td v-if="(OrdersClient.length - index) >= 1000 && (OrdersClient.length - index) < 10000" class="align-middle text-secondary font-weight-normal">
           <router-link :id="(OrdersClient.length - index) + 'Views'" :to="'orders/details/'+OrderClient.id+'/'+(OrdersClient.length - index)" @click="detailsOrderViews((OrdersClient.length - index))">
-            OR0{{(OrdersClient.length - index)}}
+            OR{{(OrdersClient.length - index)}}
           </router-link>
         </td>
         <td class="align-middle">
