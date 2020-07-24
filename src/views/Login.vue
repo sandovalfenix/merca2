@@ -3,7 +3,7 @@
     <!-- Header -->
     <header class="header header-light bg-white shadow-sm">
       <nav class="navbar flex-nowrap p-2">
-        <div class="navbar-brand-wrapper bg-white text-center">
+        <div class="navbar-brand-wrapper col-auto bg-white text-center">
           <!-- Logo For Mobile View -->
           <a class="navbar-brand navbar-brand-mobile" href="javascript:void(0)">
             <img class="img-fluid" src="@/assets/logo_merca2.png" alt="Nova">
